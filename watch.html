@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch Time</title>
+</head>
+<body>
+    <!-- <div class="watch">
+        <span class="hour"></span>
+        <span class="min"></span>
+        <span class="date"></span>
+    </div>
+
+    <script>
+        function myFun(){
+            var MyDate = new Date();
+            var hr, min = (MyDate.getMinutes() < 10) ? "0" + MyDate.getMinutes() : MyDate.getMinutes(),
+                    sec = (MyDate.getSeconds() < 10) ? "0" + MyDate.getSeconds() : MyDate.getSeconds(),
+                    M =   (MyDate.getHours() >= 12) ? "PM" : "AM";
+
+                            if(MyDate.getHours() == 0){
+                                hr = 12;
+                            }
+                            else if(MyDate.getHours() > 12){
+                                hr = MyDate.getHours() - 12;
+                            }
+                            else{
+                                hr = MyDate.getHours();
+                            }
+            
+            var NowTime = hr + ":" + min+ ":" + sec;
+            document.getElementsByClassName("hour")[0].innerHTML = NowTime;
+            document.getElementsByClassName("min")[0].innerHTML = M;
+
+            
+            var allDay = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                allMonths = ["January", "February", "March", "April", "May","June","July", "August", "September", "October", "November", "December"],
+                day = MyDate.getDate();
+
+                var Today = allDay[MyDate.allDay()] + "," + allMonths[MyDate.allMonths()] + day;
+                document.getElementsByClassName("date")[0].innerHTML = Today;
+
+
+
+        }
+        myFun();
+        setInterval(myFun() {
+            myFun();
+        }, 1000);
+    </script> -->
+
+    <div class="watch">
+        <span class="H"></span>
+        <span class="M"></span>
+        <span class="date"></span>
+    </div>
+
+    <script>
+        function myFun(){
+            var dates = new Date();
+
+            var hr, min = (dates.getMinutes() < 10) ? "0" + dates.getMinutes() : dates.getMinutes(),
+                sec = (dates.getSeconds() < 10) ? "0" +  dates.getSeconds() : dates.getSeconds(),
+                M = (dates.getHours() >= 12) ? "PM" : "AM";
+
+                if(dates.getHours() == 0){
+                    hr = 12;
+                }
+                else if(dates.getHours() > 12){
+                    hr = dates.getHours() -12;
+                }
+                else{
+                    hr = dates.getHours();
+                }
+
+                var NowCurrent
+
+            }
+    </script>
+</body>
+</html>
